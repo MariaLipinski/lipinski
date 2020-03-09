@@ -8,8 +8,7 @@ const ParallaxPrincipal = () => {
             blur={{ min: -15, max: 15 }}
             bgImage={require('../../images/banner.jpg')}
             bgImageAlt="the dog"
-            strength={200}
-        >
+            strength={400}>
             <div style={{ height: '500px' }} />
         </Parallax>
       </div>
