@@ -1,7 +1,8 @@
 import React from 'react';
-import { Parallax} from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
-const ParallaxPrincipal = () => (
+const ParallaxPrincipal = () => {
+  return (
     <div>
         <Parallax
             blur={{ min: -15, max: 15 }}
@@ -12,5 +13,7 @@ const ParallaxPrincipal = () => (
             <div style={{ height: '500px' }} />
         </Parallax>
       </div>
-);
+  );
+}
+
 export default ParallaxPrincipal;

@@ -11,7 +11,7 @@ const Header = () => {
       <nav>
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">
-            <img src={logo}/>
+            <img class="logo" src={logo}/>
           </a>
           <ul id="" class="right hide-on-med-and-down">
             <li><a href="sass.html">Quem Somos</a></li>
