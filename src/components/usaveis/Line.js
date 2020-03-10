@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Line = () => <div class="line"></div>
+const Line = (props) => <div className="line" style={{background: "{props.name}"}}></div>
 
 export default Line;

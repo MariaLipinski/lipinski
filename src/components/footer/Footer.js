@@ -1,15 +1,20 @@
 import React, {Fragment} from 'react';
-import Line from '../usaveis/Line';
+import Logo from '../../images/logofooter.png';
+import Panorama from '../../images/panorama.jpeg';
 
 const Footer = () => {
   return (
     <Fragment>
-    <div class="">
-      <div class="container">
-        <h1 class="text-center green-3 c-font-24 c-font-bold">Quem Somos</h1>
-        <p class="text-center m-bottom-35 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet pharetra dolor, sed vulputate erat sagittis eget. Nulla auctor ex et efficitur fringilla. Sed nec turpis eget augue tincidunt condimentum vitae eget neque. Nam viverra varius consequat. Duis tempus posuere auctor. Pellentesque nec fringilla lacus. Sed luctus cursus odio, sit amet pretium enim cursus eget. Ut egestas molestie tellus vel gravida. Nullam mattis porttitor nisl, sit amet pellentesque tortor aliquet placerat. Proin purus tortor, elementum eget convallis ut, elementum sit amet odio. Proin sed molestie metus, rhoncus bibendum nulla. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    <footer className="" id="footer">
+      <div className="container">
+        <img className="logo-rodape" src={Logo} alt="logo"/>
+        <p className="text-center">Rua João Lipinski, 203 - Colônia Murici, São José dos Pinhais/PR</p>
+        <p className="text-center">Fixo - (41) 3635-1220</p>
+        <p className="text-center">Ivete - (41) 9 9159-4855</p>
+        <p className="text-center">Guilherme - (41) 9 9847-5596</p>
       </div>
-    </div>
+      <img className="panorama" src={Panorama} alt="panorama"/>
+    </footer>
     </Fragment>
     );
 }

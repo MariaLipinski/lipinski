@@ -3,7 +3,8 @@ import { Parallax } from 'react-parallax';
 
 const ParallaxPrincipal = () => {
   return (
-    <div>
+    <section id="banner">
+      <div>
         <Parallax
             blur={{ min: -15, max: 15 }}
             bgImage={require('../../images/banner.jpg')}
@@ -12,6 +13,7 @@ const ParallaxPrincipal = () => {
             <div style={{ height: '500px' }} />
         </Parallax>
       </div>
+    </section>
   );
 }
 

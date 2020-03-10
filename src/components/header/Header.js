@@ -1,4 +1,7 @@
 import React, {Fragment} from 'react';
+import { Link } from "react-scroll";
+import SwipeableTemporaryDrawer from './Hamburguer.js';
+
 import logo from '../../images/logo.jpeg';
 import banner from '../../images/banner.jpg';
 
@@ -9,20 +12,59 @@ const Header = () => {
     return (
       <Fragment>
       <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">
-            <img class="logo" src={logo}/>
-          </a>
-          <ul id="" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Quem Somos</a></li>
-            <li><a href="badges.html">Produtos</a></li>
-            <li><a href="collapsible.html">Contato</a></li>
+        <SwipeableTemporaryDrawer/>
+        <div className="nav-wrapper">
+          <Link
+                to="banner"
+                smooth={true}
+                offset={-70}
+                duration= {500}
+                className="brand-logo">
+            <img className="logo" src={logo} alt="Logo"/>
+          </Link>
+          <ul id="" className="right hide-on-med-and-down">
+            <li><Link
+                  activeClass="active"
+                  to="quemsomos"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration= {500}
+                  >Quem Somos</Link>
+            </li>
+            <li><Link
+                  activeClass="active"
+                  to="produtos"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration= {500}
+                  >Produtos</Link>
+            </li>
+            <li><Link
+                  activeClass="active"
+                  to="diferenciais"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration= {500}
+                  >Diferenciais</Link>
+            </li>
+            <li><Link
+                  activeClass="active"
+                  to="footer"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration= {500}
+                  >Contato</Link>
+            </li>
           </ul>
         </div>
       </nav>
-      <div class="parallax-container">
-        <div class="parallax">
-          <img src={banner}/>
+      <div className="parallax-container">
+        <div className="parallax">
+          <img src={banner} alt="banner"/>
         </div>
       </div>
       </Fragment>

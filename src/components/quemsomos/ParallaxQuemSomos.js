@@ -3,7 +3,7 @@ import { Parallax } from 'react-parallax';
 
 const ParallaxEsquerdo = () => {
   return (
-      <div class="col m6">
+      <div className="col m6 s-12">
         <Parallax
             bgImage={require('../../images/produtos1.jpg')}
             strength={250}>
@@ -15,7 +15,7 @@ const ParallaxEsquerdo = () => {
 
 const ParallaxDireito = () => {
   return (
-      <div class="col m6">
+      <div className="col m6 s-12">
         <Parallax
             bgImage={require('../../images/produtos2.jpg')}
             strength={250}>
@@ -30,7 +30,7 @@ class ParallaxQuemSomos extends Component{
     render(){
         return(
           <Fragment>
-            <div class="row">
+            <div className="row">
               <ParallaxEsquerdo/>
               <ParallaxDireito/>
             </div>

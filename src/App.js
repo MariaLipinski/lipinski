@@ -16,33 +16,32 @@ const produtos = [
     title: "Alface Crespa",
     text: 'Rica em fibras, ajuda na digestão e no bom funcionamento do intestino, além de apresentar pequenos teores de minerais como cálcio e fósforo.',
     valor_unitario: '1,00',
-    valor_unitario: '1,00',
     valor_caixa:'14,00',
-    icon: "../../images/icons/alface-icon.png"
+    icon: "crespa"
   },
   {
     id: Math.random(),
-    title: "Box titulo 2",
-    text: 'lorem',
+    title: "Alface Lisa",
+    text: 'A alface lisa é o tipo mais usado nas cozinhas domésticas. As folhas são lisas, macias e mais frágeis, mas muito saborosas.',
     valor_unitario: '',
     valor_caixa:'',
-    icon: "#EDA9A9"
+    icon: "lisa"
   },
   {
     id: Math.random(),
-    title: "Box titulo 3",
-    text: 'lorem',
+    title: "Escarola",
+    text: 'Possui largas folhas verde-escuras, que têm um sabor suave, amargo e textura crocante. Nativa das Índias Orientais.',
     valor_unitario: '',
     valor_caixa:'',
-    icon: "#F2EE8D"
+    icon: "escarola"
   },
   {
     id: Math.random(),
-    title: "Box titulo 4",
-    text: 'lorem',
+    title: "Brócolis",
+    text:  'Brócolis do tipo ramoso é caracterizado principalmente por apresentar inflorescências laterais, também de coloração verde-escura.',
     valor_unitario: '',
     valor_caixa:'',
-    icon: "#9FEACD"
+    icon: "brocolis"
   }
 ];
 
@@ -51,10 +50,10 @@ function App() {
     <Fragment>
       <Header/>
       <ParallaxPrincipal/>
-      <QuemSomos/>
-      <Produtos boxData={produtos} />
-      <Diferenciais/>
-      <Footer/>
+      <QuemSomos />
+      <Produtos boxData={produtos} id="produtos"/>
+      <Diferenciais id="diferenciais"/>
+      <Footer id="footer"/>
     </Fragment>
   );
 }
