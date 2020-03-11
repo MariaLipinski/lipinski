@@ -7,7 +7,6 @@ import Produtos from './components/produtos/Produtos'
 import Diferenciais from './components/diferenciais/Diferenciais';
 import Footer from './components/footer/Footer';
 
-
 import './Styles.css';
 
 const produtos = [
@@ -47,14 +46,14 @@ const produtos = [
 
 function App() {
   return (
-    <Fragment>
-      <Header/>
-      <ParallaxPrincipal/>
-      <QuemSomos />
-      <Produtos boxData={produtos} id="produtos"/>
-      <Diferenciais id="diferenciais"/>
-      <Footer id="footer"/>
-    </Fragment>
+      <Fragment>
+        <Header/>
+        <ParallaxPrincipal/>
+        <QuemSomos />
+        <Produtos boxData={produtos} id="produtos"/>
+        <Diferenciais id="diferenciais"/>
+        <Footer id="footer"/>
+      </Fragment>
   );
 }
 
