@@ -4,8 +4,8 @@ import Line from '../usaveis/Line';
 function Produtos({ boxData }) {
   return (
     <Fragment>
-    <section id="produtos">
-        <h1 className="text-center green-3 c-font-24 c-font-bold">Nossos Produtos</h1>
+    <section id="produtos" className="container">
+        <h1 className="text-center green-3 c-font-24 c-font-bold">Produtos</h1>
         <Line/>
         <div className="row">
         {boxData.map(box => (
@@ -14,8 +14,8 @@ function Produtos({ boxData }) {
              <div className={box.icon}/>
              <h5>{box.title}</h5>
              <p>{box.text}</p>
-             <p>Valor unitário <b className="c-font-1">R${box.valor_unitario}</b></p>
-             <p>Valor caixa (18 unidades) <b className="c-font-1">R${box.valor_caixa}</b></p>
+             <p>Valor unitário R$<b className="c-font-1">{box.valor_unitario}</b></p>
+             <p>{box.text_preco}<b className="c-font-14">{box.valor_caixa}</b></p>
            </div>
          </div>
         ))}

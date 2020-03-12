@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
-import Icon from '@material-ui/core/Icon';
+import DehazeIcon from '@material-ui/icons/Dehaze';
 
 const useStyles = makeStyles({
   list: {
@@ -46,7 +46,7 @@ export default function SwipeableTemporaryDrawer() {
               smooth={true}
               offset={-70}
               duration= {500}
-              >Quem Somos</Link>
+              >Nossa História</Link>
         <Link
               activeClass="active"
               className="a-mobile"
@@ -82,7 +82,7 @@ export default function SwipeableTemporaryDrawer() {
 
   return (
     <div>
-      <Button className="hide-on-large-only" onClick={toggleDrawer('right', true)}><Icon>add_circle</Icon></Button>
+      <Button className="hide-on-large-only" onClick={toggleDrawer('right', true)}><DehazeIcon/></Button>
       <SwipeableDrawer
         anchor="right"
         open={state.right}

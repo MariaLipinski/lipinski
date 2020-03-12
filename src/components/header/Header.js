@@ -10,10 +10,10 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 const Header = () => {
     return (
-      <Fragment>
+    <Fragment>
       <nav>
         <SwipeableTemporaryDrawer/>
-        <div className="nav-wrapper">
+        <div className="nav-wrapper container">
           <Link
                 to="banner"
                 smooth={true}
@@ -30,7 +30,7 @@ const Header = () => {
                   smooth={true}
                   offset={-70}
                   duration= {500}
-                  >Quem Somos</Link>
+                  >Nossa História</Link>
             </li>
             <li><Link
                   activeClass="active"

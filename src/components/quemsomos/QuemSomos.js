@@ -2,15 +2,15 @@ import React, {Fragment} from 'react';
 import Line from '../usaveis/Line';
 import ParallaxQuemSomos from './ParallaxQuemSomos';
 
-
 const QuemSomos = () => {
   return (
     <Fragment>
       <section id="quemsomos">
         <div className="container">
-          <h1 className="text-center green-3 c-font-24 c-font-bold">Quem Somos</h1>
+          <h1 className="text-center green-3 c-font-24 c-font-bold">Nossa História</h1>
           <Line className="white"/>
-          <p className="text-center m-bottom-35 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet pharetra dolor, sed vulputate erat sagittis eget. Nulla auctor ex et efficitur fringilla. Sed nec turpis eget augue tincidunt condimentum vitae eget neque. Nam viverra varius consequat. Duis tempus posuere auctor. Pellentesque nec fringilla lacus. Sed luctus cursus odio, sit amet pretium enim cursus eget. Ut egestas molestie tellus vel gravida. Nullam mattis porttitor nisl, sit amet pellentesque tortor aliquet placerat. Proin purus tortor, elementum eget convallis ut, elementum sit amet odio. Proin sed molestie metus, rhoncus bibendum nulla. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          <p className="text-center m-bottom-35 ">Em abril de 1878, 20 famílias de imigrantes poloneses chegaram na cidade de São José dos Pinhais criando a comunidade de Colônia Murici, onde concretizaram o projeto de "cinturão verde" ao redor de Curitiba, afim de abastecer essa região com produtos de subsistência. Assim crescemos rodeados de cultura e ensinamentos por nossos antepassados, nossa família que carrega o sobrenome de Lipinski quebrou a fronteira dos munícipios oferecendo hortaliças de qualidade não só para São José, mas também as regiões Litorâneas do Paraná e Santa Catarina</p>
+          <p className="text-center m-bottom-35 ">O nome Gato Preto deu-se origem a partir do apelido do pai da família, João Lipinski Neto (em memória), que recebeu devido ao seu carisma e apoio que dava a todos da comunidade. A família é constituída pelo João, Ivete e seus três filhos, Luciane, Maria Eduarda e Guilherme que também herdou o mesmo apelido e trabalha juntamente com as hortaliças.</p>
         </div>
         <ParallaxQuemSomos/>
       </section>
